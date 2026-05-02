@@ -1,0 +1,190 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    background: #6c8ba9;
+}
+
+header {
+    background-color: #47566d;
+    padding: 1vw;
+    text-align: center;
+}
+
+#brainIcon {
+    display: flex;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#brainIcon:hover {
+    display: flex;
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 1.1rem; 
+    background: #455b7e;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-sizing: border-box;
+    display: block;
+}
+
+.navbar h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 1.5rem;
+    pointer-events: none;
+  }
+
+.navbar ul {
+    list-style: none;
+    justify-content: right;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    right: 12px;         
+    top: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    white-space: nowrap;
+    color: white;;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 8px;
+}
+
+/* need to fix the navbar clipping when size shrinks, may need to make hamburger */
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+.social-links img {
+    width: 48px;
+    height: 48px;
+    opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+  
+.social-links img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+footer {
+    background-color: #455b7e;
+    text-align: center;
+    padding: 6px 8px;
+}
+
+.copyright {
+    padding: 6px 8px;
+}
+
+footer > h3 {
+    padding: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+/* .parallax {
+    background-image: url("media/TREE_copy.jpeg");
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+main > section > p {
+    padding: 2px;
+}
+
+.me {
+    width: 210px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.pfpFrame {
+    display: inline-block;
+    border: 4px solid #5b85a3;
+    padding: 5px;
+    border-bottom: 0px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pfpFrame:hover {
+    transform: scale(1.025);
+    opacity: 1;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #efebeb;
+}
+
+p {
+    color: #efebeb;
+}
+
+.about {
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: left;
+    max-width: 900px;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    gap: 3rem;
+    margin: 5rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul { display:flex; gap: 0px; }
+    .me { width: 210px;
+        height: 200px; }
+    .intro { flex-direction: column; align-items: center; }
+  }
+  
+
+.cv {
+    top: 50%;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: left;
+    max-width: 900px;
+    align-items: center;
+}
