@@ -24,7 +24,13 @@ main > section > p {
     border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
+    animation: fadeUp 1.2s ease both;
 }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -119,6 +125,7 @@ p {
     align-items: center; 
     justify-content: space-between;
     box-sizing: border-box;
+    z-index: 9999;   /* ADD THIS */
 }
 
 .navbar h1 {
@@ -206,6 +213,7 @@ p {
         left: 0;
         width: 100%;
         display: block;
+        z-index: 9999; 
     }
 
     .navLinks.responsive li:last-child {
