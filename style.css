@@ -63,7 +63,7 @@ p {
 .intro {
     display: flex;
     justify-content: center;
-    align-items: centre;
+    align-items: center;
     gap: 3rem;
     margin: 5rem auto;
     padding: 0 1.5rem;
@@ -96,6 +96,33 @@ p {
     align-items: center;
 }
 
+.mediaContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.mediaContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    background: #4b6681;
+    padding: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .25);
+}
+
+@media screen and (max-width: 950px) {
+    .mediaContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* NAVBAR */
 
 #brainIcon {
@@ -125,7 +152,7 @@ p {
     align-items: center; 
     justify-content: space-between;
     box-sizing: border-box;
-    z-index: 9999;   /* ADD THIS */
+    z-index: 9999; 
 }
 
 .navbar h1 {
